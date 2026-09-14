@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --color-principal:#8c69e4;
+    --color-acento: #e16baa;
+    --color-acento2:#6bc0e1;
+    --color-texto: #353232;
+
+}
+.hide-element{
+  display: none;
+}
+.flex-elements{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+img{
+  width: 100%;
+}
+h1{
+font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color:var(--color-principal)
+
+}
+h2{
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color:var(--color-acento);
+  text-align: center;
+  margin: 0 0 20px 0;
+
+
+}
+h3{
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color:var(--color-acento);
+
+}
+p{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color:var(--color-texto);
+  text-align: justify;
+
+}
+
+#cabecera-web{
+  background-color: #e2d6fd;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solif var(--color-principal);
+}
+
+.bt-principal{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color:white;
+  background: var(--color-principal);
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.3s all linear ;
+}
+.bt-principal:hover{
+  background: var(--color-acento2);
+  padding: 8px 20px;
+}
+
+#destacado{
+  padding: 100px 0;
+}
+
+.bt-vermas{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: bold;
+  color:var(--color-principal);
+  display:inline-block;
+  margin: 5px 0;
+}
+
+.bt-vermas:hover{
+color: var(--color-acento2);
+}
+
+.articulo-index{
+margin: 10px 15px;
+padding: 10px;
+box-shadow: 0 0 5px rgba(0, 0,0 , 3);
+border-radius: 15px;
+}
+
+#experiencia{
+  background-color: rgb(255, 245, 253);
+  padding: 100px 20px;
+}
+
+#experiencia h2{
+  color: #c93e88;
+}
+
+
+/*---------------------------*/
+
+@media (max-width: 600px){
+  #cabecera-web{
+    flex-direction: column;
+  }
+  #cabecera-web > nav {
+    width: 100%;
+  }
+ .bt-principal{
+  display: block;
+  text-align: center;
+  border-radius: 0;
+  border-bottom: 1px solid var(--color-acento2);
+
+ }
+ 
+ .flex-elements{
+  flex-direction: column;
+ }
+
+
+}
