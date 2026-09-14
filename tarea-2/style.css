@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F3EA;
+    color: #19343A;
+}
+
+/* HEADER */
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 130px;
+}
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #19343A;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #E9795B;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 84%;
+    margin: auto;
+}
+
+main > h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    color: #176B78;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+/* SECCIONES */
+
+section {
+    margin-bottom: 80px;
+}
+
+section h2,
+#titulo-mapa {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    color: #19343A;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS */
+
+section > div {
+    display: flex;
+    gap: 30px;
+}
+
+section article {
+    width: 33.33%;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section article img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+section article h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    color: #176B78;
+    padding: 20px 20px 10px;
+}
+
+section article p {
+    color: #68777A;
+    padding: 0 20px 15px;
+    line-height: 1.5;
+}
+
+section article a {
+    display: inline-block;
+    color: #E9795B;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px 20px;
+}
+
+section article a:hover {
+    color: #176B78;
+}
+
+/* VIDEO */
+
+section:nth-of-type(2) > div {
+    display: block;
+    width: 100%;
+    background-color: #102F35;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+section:nth-of-type(2) video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* DESTACADOS */
+
+section:nth-of-type(3) > div {
+    display: block;
+}
+
+section:nth-of-type(3) > div > div {
+    display: flex;
+    gap: 30px;
+}
+
+section:nth-of-type(3) article {
+    width: 33.33%;
+}
+
+section:nth-of-type(3) article img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* MAPA */
+
+#titulo-mapa {
+    margin-top: 70px;
+}
+
+.map-container {
+    width: 100%;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    display: block;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #102F35;
+    color: white;
+    padding: 60px 8%;
+    display: flex;
+    gap: 60px;
+}
+
+.footer-brand {
+    width: 35%;
+}
+
+.footer-brand h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    color: #B8C6C8;
+}
+
+footer > div:last-child {
+    width: 65%;
+    display: flex;
+    gap: 50px;
+}
+
+footer nav {
+    width: 33.33%;
+}
+
+footer nav h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #B8C6C8;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4FB7A9;
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    main > h1 {
+        font-size: 40px;
+        padding: 60px 10px;
+    }
+
+    section h2,
+    #titulo-mapa {
+        font-size: 28px;
+    }
+
+    section > div,
+    section:nth-of-type(3) > div > div {
+        flex-direction: column;
+    }
+
+    section article,
+    section:nth-of-type(3) article {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-brand,
+    footer > div:last-child {
+        width: 100%;
+    }
+
+    footer > div:last-child {
+        flex-direction: column;
+    }
+
+    footer nav {
+        width: 100%;
+    }
+}
